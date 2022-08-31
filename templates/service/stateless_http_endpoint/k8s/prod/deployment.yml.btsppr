@@ -1,0 +1,53 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {app_name}
+  namespace: default
+  labels:
+    app: {app_name}
+    env: prod
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {app_name}
+      env: prod
+  template:
+    metadata:
+      labels:
+        app: {app_name}
+        env: prod
+    spec:
+      containers:
+      - name: {app_name}
+        image: <registry_host>/<registry_bucket>/{app_name}:<image_id> # change this later to the correct repository and image id!
+        resources:
+          limits:
+            cpu: 100m
+            memory: 100Mi
+          requests:
+            cpu: 100m
+            memory: 100Mi
+        livenessProbe:
+          httpGet:
+            path: /healthcheck
+            port: 8080
+          initialDelaySeconds: 1
+          periodSeconds: 5
+        readinessProbe:
+          httpGet:
+            path: /healthz
+            port: 8080
+          initialDelaySeconds: 10
+          periodSeconds: 20
+        env:
+        - name: {app_prefix}_APP_ENVIRONMENT
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.labels['env']
+        - name: {app_prefix}_PORT
+          value: "8080"
+        - name: {app_prefix}_METRICS_PORT
+          value: "8081"
+        - name: {app_prefix}_GITHUB_EMOJI_URL
+          value: "https://api.github.com/emojis"

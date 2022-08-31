@@ -1,0 +1,14 @@
+#!/bin/sh
+
+set -e
+
+cd "$(dirname "$0")/.."
+
+[ -z "$DEBUG" ] || set -x
+
+echo "==> Running {app_name} tests…"
+if [ -n "$1" ]; then
+  testdir="/$*"
+fi
+
+docker-compose run --rm -e {app_prefix}_PORT=8080 web go test -cover -race .$testdir/...

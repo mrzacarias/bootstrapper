@@ -1,0 +1,24 @@
+# apiVersion: extensions/v1beta1
+# kind: Ingress
+# metadata:
+#   name: {app_name}
+#   annotations:
+#     kubernetes.io/tls-acme: "true"
+#     kubernetes.io/ingress.allow-http: "false"
+#     external-dns.alpha.kubernetes.io/cloudflare-proxied: "false"
+#   namespace: default
+#   labels:
+#     env: prod
+#     app: {app_name}
+# spec:
+#   tls:
+#   - hosts:
+#     - {app_name}.prod.evqt.net
+#     secretName: {app_name}-tls
+#   rules:
+#   - host: {app_name}.prod.evqt.net
+#     http:
+#       paths:
+#       - backend:
+#           serviceName: {app_name}
+#           servicePort: 80
