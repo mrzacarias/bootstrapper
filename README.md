@@ -13,9 +13,8 @@ Boilerplate/Scaffolding tool to bootstrap new k8s applications
 
 Bootstrapper's boilerplate application was created trying to cover the most common operations a k8s application will need to handle.
 
-There are currently 2 types of services to chose:
+There are currently 1 types of services to chose:
 1. Stateless HTTP Endpoint (default)
-1. Stateful HTTP Endpoint (With Postgres scaffolding)
 
 ### Stateless HTTP Endpoint
 
@@ -27,24 +26,6 @@ Basic HTTP server with:
 #### Creating app
 ```
 $ bootstrapper --app_name=stateless --app_prefix=STL --app_template=1
-```
-
-#### Example
-```
-http://localhost:1234/emoji?name=shipit
-```
-
-### Stateful HTTP Endpoint
-
-Same as the Stateless version, but with basic Postgres configuration for:
-1. Setup postgres database images (docker-compose)
-1. Run the migrations during the image creation (initdb.d)
-1. Packages and tests updated to record emoji requests
-1. Last 5 requests on emoji feedback page
-
-#### Creating app
-```
-$ bootstrapper --app_name=stateful --app_prefix=STF --app_template=2
 ```
 
 ## K8s configuration
