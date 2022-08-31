@@ -21,7 +21,7 @@ Basic HTTP server with:
 
 #### Creating app
 ```
-$ bootstrapper --app_name=stateless --app_prefix=STL --app_path=github.com/mrzacarias
+./bin/bootstrapper --app_name=stateless --app_prefix=STL --app_path=github.com/mrzacarias
 ```
 
 ## K8s configuration
