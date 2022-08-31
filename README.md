@@ -11,21 +11,17 @@ Boilerplate/Scaffolding tool to bootstrap new k8s applications
 
 ## The Boilerplate Application
 
-Bootstrapper's boilerplate application was created trying to cover the most common operations a k8s application will need to handle.
-
-There are currently 1 types of services to chose:
-1. Stateless HTTP Endpoint (default)
-
-### Stateless HTTP Endpoint
+Bootstrapper's boilerplate golang application was created trying to cover the most common operations a k8s application will need to handle.
 
 Basic HTTP server with:
 1. **Root**: Will just present the service
 1. **Health Check Endpoints**: Used by Kubernetes to check the service liveness
 1. **Emoji**: Fun endpoint that will receive a GET request with a `name` param and return the correspondent GitHub emoji (if existent)
+1. **Metrics**: Metrics endpoint with basic set of recorded metrics ready to be consumed by Prometheus
 
 #### Creating app
 ```
-$ bootstrapper --app_name=stateless --app_prefix=STL --app_template=1
+$ bootstrapper --app_name=stateless --app_prefix=STL --app_path=github.com/mrzacarias
 ```
 
 ## K8s configuration
