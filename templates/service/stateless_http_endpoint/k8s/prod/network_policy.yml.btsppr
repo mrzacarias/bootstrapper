@@ -3,6 +3,9 @@ kind: NetworkPolicy
 metadata:
   name: {app_name}
   namespace: default
+  labels:
+    app: {app_name}
+    env: prod
 spec:
   podSelector:
     matchLabels:

@@ -1,11 +1,11 @@
 apiVersion: autoscaling/v2beta2
 kind: HorizontalPodAutoscaler
 metadata:
+  name: {app_name}
+  namespace: default
   labels:
     app: {app_name}
     env: prod
-  name: {app_name}
-  namespace: default
 spec:
   scaleTargetRef:
     apiVersion: apps/v1

@@ -22,8 +22,8 @@ metadata:
   name: {app_name}-internal
   namespace: default
   labels:
-    env: prod
     app: {app_name}
+    env: prod
 spec:
   type: ClusterIP
   ports:
@@ -31,5 +31,5 @@ spec:
     port: 81
     targetPort: 8081
   selector:
-    env: prod
     app: {app_name}
+    env: prod

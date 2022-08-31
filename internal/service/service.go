@@ -61,7 +61,7 @@ func BuildService(appName, appPrefix, appPath string) (err error) {
 	// Generate `k8s/prod` files
 	k8sProdDir := basePath + "/k8s/prod"
 	_ = os.MkdirAll(k8sProdDir, os.ModePerm)
-	k8sProdFiles := []string{"deployment.yml", "horizontal_autoscaler.yml", "ingress.yml", "network_policy.yml", "pod_disruption_budget.yml", "service.yml"}
+	k8sProdFiles := []string{"deployment.yml", "horizontal_autoscaler.yml", "ingress.yml", "network_policy.yml", "pod_disruption_budget.yml", "service_monitor.yml", "service.yml"}
 	err = loadAndGenerate(replacer, k8sProdFiles, "k8s/prod/", k8sProdDir, notExecutable)
 	if err != nil {
 		return err

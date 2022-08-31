@@ -2,14 +2,14 @@
 # kind: Ingress
 # metadata:
 #   name: {app_name}
+#   namespace: default
+#   labels:
+#     app: {app_name}
+#     env: prod
 #   annotations:
 #     kubernetes.io/tls-acme: "true"
 #     kubernetes.io/ingress.allow-http: "false"
 #     external-dns.alpha.kubernetes.io/cloudflare-proxied: "false"
-#   namespace: default
-#   labels:
-#     env: prod
-#     app: {app_name}
 # spec:
 #   tls:
 #   - hosts:

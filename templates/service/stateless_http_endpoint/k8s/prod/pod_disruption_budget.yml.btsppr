@@ -3,6 +3,9 @@ kind: PodDisruptionBudget
 metadata:
   name: {app_name}
   namespace: default
+  labels:
+    app: {app_name}
+    env: prod
 spec:
   maxUnavailable: 25%
   selector:
