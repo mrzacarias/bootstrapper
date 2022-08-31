@@ -1,4 +1,4 @@
-module github.com/mrzacarias/app-test
+module {app_path}/{app_name}
 
 go 1.17
 
