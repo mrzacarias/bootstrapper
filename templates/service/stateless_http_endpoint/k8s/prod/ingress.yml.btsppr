@@ -1,24 +1,30 @@
-# apiVersion: extensions/v1beta1
-# kind: Ingress
-# metadata:
-#   name: {app_name}
-#   namespace: default
-#   labels:
-#     app: {app_name}
-#     env: prod
-#   annotations:
-#     kubernetes.io/tls-acme: "true"
-#     kubernetes.io/ingress.allow-http: "false"
-#     external-dns.alpha.kubernetes.io/cloudflare-proxied: "false"
-# spec:
-#   tls:
-#   - hosts:
-#     - {app_name}.prod.evqt.net
-#     secretName: {app_name}-tls
-#   rules:
-#   - host: {app_name}.prod.evqt.net
-#     http:
-#       paths:
-#       - backend:
-#           serviceName: {app_name}
-#           servicePort: 80
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: {app_name}
+  namespace: default
+  labels:
+    app: {app_name}
+    env: prod
+  annotations:
+    cert-manager.io/cluster-issuer: "letsencrypt-staging"
+    nginx.ingress.kubernetes.io/use-regex: "true"
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
+spec:
+  ingressClassName: nginx
+  tls:
+  - hosts:
+    - a765aa0061e5a4d7aa5d63e86a1083dd-1954319865.us-east-1.elb.amazonaws.com # your host or LB host here
+    secretName: {app_name}-tls
+  rules:
+    - host: a765aa0061e5a4d7aa5d63e86a1083dd-1954319865.us-east-1.elb.amazonaws.com # your host or LB host here
+      http:
+        paths:
+          - path: /{app_name}(/|$)(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: {app_name}
+                port:
+                  number: 80
+
