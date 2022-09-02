@@ -10,8 +10,17 @@
 1. `./script/test.sh (test_folder)` will run tests
 1. `./script/run.sh` will run the app
 
-#### Example
+### Example
 ```
 http://localhost:1234/emoji?name=shipit
 http://localhost:1235/metrics
 ```
+
+### Git configuration
+```
+git init
+git branch -M main
+git add .
+git commit -m "first commit for {app_name}"
+git remote add origin git@github.com:<user>/{app_name}.git (your app path is `{app_path}`)
+git push -u origin main

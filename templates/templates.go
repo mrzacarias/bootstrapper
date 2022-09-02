@@ -1,5 +1,6 @@
 // Code generated for package templates by go-bindata DO NOT EDIT. (@generated)
 // sources:
+// templates/service/stateless_http_endpoint/.github/workflows/build-and-publish.yml.btsppr
 // templates/service/stateless_http_endpoint/.gitignore.btsppr
 // templates/service/stateless_http_endpoint/Dockerfile.btsppr
 // templates/service/stateless_http_endpoint/README.md.btsppr
@@ -101,6 +102,26 @@ func (fi bindataFileInfo) IsDir() bool {
 // Sys return file is sys mode
 func (fi bindataFileInfo) Sys() interface{} {
 	return nil
+}
+
+var _templatesServiceStateless_http_endpointGithubWorkflowsBuildAndPublishYmlBtsppr = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\x84\x92\x41\x4f\xc2\x40\x10\x85\xef\xfd\x15\x73\x30\xe1\x54\x49\xf4\xb6\x27\x45\x9a\x90\x20\x10\x41\xce\x64\xdb\x4e\x60\x95\xee\xae\x3b\x33\x62\x24\xfc\x77\xd3\x6d\x53\x88\x02\x9e\x36\x3b\x6f\xde\xd7\xbe\xd9\xb1\xba\x42\x05\x85\x49\x12\x67\x55\x02\xe0\x85\x36\xf5\x09\x90\x07\x6d\x8b\x0d\x52\x73\x03\x48\xa1\x57\x69\x63\x7b\x49\xf2\xe6\xf2\x58\x2d\x5d\xf1\x8e\xa1\xd1\x83\x58\x4a\x9d\x55\x20\xb9\x58\x96\x74\xab\x19\x89\xa3\x44\x8c\xfe\x48\x69\x4f\x80\xe6\xcb\x0b\x64\x10\x0f\x2f\xd9\x64\xd9\x29\x42\x48\xaa\xa5\xf7\x09\x59\x7c\xfa\x81\x95\xa4\xba\x60\xe3\xec\xc3\xe7\xdd\x75\xd6\x30\x1a\x61\x20\x66\x5b\x7e\x5d\x83\xe6\xb1\xe3\x5f\xec\xb3\x5b\x1b\x0b\xec\x5a\xf0\x48\xf2\xf3\xd0\x6d\xdd\xf7\x87\x06\xb0\x33\xbc\x51\xdd\x2d\x9a\x42\x43\xbe\xd9\xef\x81\xb0\x08\xc8\x74\x3b\x9c\x3d\x8d\xb3\xf9\x68\x39\x58\x2d\x17\xd9\x7c\xfa\x38\xc9\xe0\x70\x38\x71\x79\x4d\xb4\x73\xa1\xbc\xe4\x7a\x9d\x8d\xb3\xe9\xd1\xf2\x3b\x44\x9c\x06\x68\x5b\xc6\x17\x3e\x1f\x20\xce\x23\xad\xf5\x2e\xc5\xfd\xc5\x14\x71\x51\x80\x83\xe0\x49\x91\xf5\x9a\x14\x54\xe1\x5b\x17\x3a\x18\x4d\xfd\xbd\xf6\x7e\x55\xff\xc1\x41\xb5\x1b\xf1\x13\x00\x00\xff\xff\xf1\x6c\x65\x1b\x71\x02\x00\x00")
+
+func templatesServiceStateless_http_endpointGithubWorkflowsBuildAndPublishYmlBtspprBytes() ([]byte, error) {
+	return bindataRead(
+		_templatesServiceStateless_http_endpointGithubWorkflowsBuildAndPublishYmlBtsppr,
+		"templates/service/stateless_http_endpoint/.github/workflows/build-and-publish.yml.btsppr",
+	)
+}
+
+func templatesServiceStateless_http_endpointGithubWorkflowsBuildAndPublishYmlBtsppr() (*asset, error) {
+	bytes, err := templatesServiceStateless_http_endpointGithubWorkflowsBuildAndPublishYmlBtspprBytes()
+	if err != nil {
+		return nil, err
+	}
+
+	info := bindataFileInfo{name: "templates/service/stateless_http_endpoint/.github/workflows/build-and-publish.yml.btsppr", size: 625, mode: os.FileMode(420), modTime: time.Unix(1662147155, 0)}
+	a := &asset{bytes: bytes, info: info}
+	return a, nil
 }
 
 var _templatesServiceStateless_http_endpointGitignoreBtsppr = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\xd2\x73\x09\x8e\x0f\x2e\xc9\x2f\x4a\xe5\x4a\xca\xcc\xe3\x02\x04\x00\x00\xff\xff\x63\x34\x88\x58\x0e\x00\x00\x00")
@@ -423,7 +444,7 @@ func templatesServiceStateless_http_endpointK8sProdHorizontal_autoscalerYmlBtspp
 	return a, nil
 }
 
-var _templatesServiceStateless_http_endpointK8sProdIngressYmlBtsppr = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\x84\x90\xbd\x6e\xeb\x30\x0c\x85\x77\x3f\x05\x11\xcf\x72\x6e\xb6\x0b\xbd\x41\x97\xa2\x53\xd7\x82\x96\x98\x5a\x88\x42\xa9\x22\xed\x06\x28\xfa\xee\x85\xec\xfc\x37\x40\x37\x8a\xf8\x78\xf0\x1d\xb5\x80\x39\xbc\x52\x91\x90\xd8\x02\x1d\x94\xb8\x8e\xb2\x9e\x36\x3d\x29\x6e\x9a\x16\x76\x81\xbd\x85\x27\x7e\x2f\x24\xd2\xb4\xb0\x27\x45\x8f\x8a\xb6\x69\x01\x80\x71\x4f\x16\xbe\x30\xe7\xb7\x3a\x7e\x9f\x97\x92\xd1\x91\x05\x4f\x5b\x1c\xa3\xce\xeb\x88\x3d\x45\x59\xee\x00\x30\xe7\x5f\x87\x00\xc4\x93\x85\x5c\x92\x9f\xdf\xc8\x9c\x14\xb5\x1a\x9d\xce\x76\x63\x4f\x85\x49\x49\xba\x90\xd6\x1a\xc5\xa0\xab\x0a\x2b\x2d\x23\xad\x1e\x42\x61\x71\xef\x30\xc6\xf4\x69\x06\xd5\x6c\x61\xb5\xc5\x28\x67\xbe\x16\x2f\x8c\xd1\x78\xae\x58\x1e\xb0\xbb\x8d\x70\x31\x8d\x7e\x1b\xb1\x90\xc9\x25\x1d\x02\xf9\xeb\x08\xc9\xe4\x16\x3f\x3d\xf5\x33\x30\x24\xd1\xb3\xb5\xb9\x6a\xda\xd5\x7a\x1d\x4d\x1f\xda\x31\xe9\x11\x10\x72\x85\xf4\xf9\xee\x37\x8d\x46\x99\x81\x32\x46\xba\x49\xb6\x7f\x05\xce\x35\x8f\x33\x40\x46\x1d\xe4\xf2\x34\xd0\xa3\xdb\x11\xfb\xcb\x6a\x91\x28\x53\x70\x74\x6f\xf1\x88\x79\x49\x45\x2d\xfc\xff\xd7\xfc\x04\x00\x00\xff\xff\xf7\x67\xf6\x8c\x42\x02\x00\x00")
+var _templatesServiceStateless_http_endpointK8sProdIngressYmlBtsppr = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\xbc\x94\x4f\x4f\xdb\x4a\x14\xc5\xf7\xfe\x14\x47\x09\x0b\x78\xd2\x38\x2f\xef\x95\x0a\x46\x08\x89\x42\x16\x48\x25\x54\x01\x55\xea\x2a\xba\xb1\x6f\x9c\x51\x26\x33\xd6\x9d\xeb\x40\xfa\xe7\xbb\x57\x36\x96\x20\xb4\x6a\x77\x78\x35\x3e\xe3\xdf\x9c\x33\x67\x6c\x53\xed\x3e\xb3\x24\x17\x83\x45\x60\x7d\x88\xb2\x76\xa1\xca\xd7\x27\x29\x77\x71\xb4\x1d\x67\x6b\x17\x4a\x8b\xeb\x50\x09\xa7\x94\x6d\x58\xa9\x24\x25\x9b\x01\x81\x36\x6c\xf1\x8d\xea\x7a\xde\x0e\x7f\xf4\x52\xaa\xa9\x60\x8b\x92\x97\xd4\x78\xcd\x00\x4f\x0b\xf6\xa9\x25\x00\xaa\xeb\x57\x08\xc0\x61\x6b\x51\x4b\x2c\x33\x80\x42\x88\x4a\xea\x62\xe8\x81\x82\x45\xcd\x86\x02\x55\x2c\x6d\xa2\xc2\x37\x49\x59\x8c\x4b\xa9\x61\xb1\x18\x78\xd6\xc4\xa1\x90\x5d\xad\x26\x29\x55\x2e\x54\x83\x8e\x0c\x95\x0b\x8f\xb9\x7b\x0a\x9e\xaf\x9b\x05\x4b\x60\xe5\x6e\x5f\x4d\x62\x23\x5c\xf1\xa3\xc5\x40\xa5\xe1\xbf\x13\xc2\x0f\xe2\x94\x8d\x92\x54\xac\x16\xa3\x83\xff\x3a\x66\xf8\x47\x2a\x25\x6f\x84\x4b\x27\x5c\xa8\xc5\x60\x49\x3e\xf1\x00\x43\xdc\x06\xbf\x43\x60\x2e\xb9\x84\x5b\x62\x17\x1b\xac\x68\xcb\x20\x4c\x66\xb3\xf9\xfd\xed\xed\xfc\xe6\x62\xfa\x65\x3e\x9b\x5c\x5d\xcf\x26\x97\xf7\x77\x60\x91\x28\x59\xaa\xb9\x68\x6b\xe9\xcd\x2e\x3d\xa5\x34\xed\x4e\xa1\x0b\x91\x01\xfa\x54\xb4\xc1\x2a\x26\xed\x2b\x1c\xc2\xe0\x6c\x17\x1b\x31\xad\x78\x9e\x17\x71\x83\x21\xae\x5f\xd8\xb6\x93\xb8\x9a\xde\xa1\x88\x61\xe9\xaa\x46\xb8\x04\x85\x12\x84\xcb\xe9\xc5\xcd\x04\x75\x74\x41\x5d\xa8\xa0\x11\xba\x62\x7c\x8c\x54\xe2\x03\x79\x0a\x05\x4b\xe7\x61\x80\x33\x1f\xa9\x34\x8b\x5e\x35\xae\x3c\x37\xe3\xd3\xe3\x77\xff\x8f\x4f\x4f\xde\x1f\xe7\x4d\x32\x4c\x49\xcd\x38\x67\xbf\xc8\x69\x43\x5f\x63\xa0\x87\xd4\x87\xe9\x02\xec\xad\x0a\x6a\x34\x6e\x48\x5d\x41\xde\xef\x50\x71\x60\x21\xe5\xb2\x8d\xd9\x39\x26\x2e\x84\x75\xfa\xea\x1d\x34\xea\x53\x06\x48\xe3\xf9\x4d\x77\xdf\xae\x6d\xdf\xbc\x03\x60\xa5\x5a\xdb\x7e\x0c\xd4\xa4\xab\xf4\x7c\xdb\x06\x6b\x25\x8b\xd1\x73\x43\x87\xa3\xef\x07\x47\x87\xf9\x3f\x47\x2f\x1e\x7b\x22\xef\x77\x35\x5b\x7c\x12\x5e\xba\xc7\xbd\xc9\x05\x15\x6b\x0e\xa5\xdd\x13\xdb\x13\x90\xad\x2b\xf8\xb5\xfc\xdb\x1f\xc3\xfe\x55\x47\xd1\x5f\x31\x20\x34\x9b\x45\xfb\x51\x9f\xfc\x9b\x65\x3f\x03\x00\x00\xff\xff\xb8\xed\xe0\x5b\x99\x04\x00\x00")
 
 func templatesServiceStateless_http_endpointK8sProdIngressYmlBtspprBytes() ([]byte, error) {
 	return bindataRead(
@@ -438,7 +459,7 @@ func templatesServiceStateless_http_endpointK8sProdIngressYmlBtsppr() (*asset, e
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/service/stateless_http_endpoint/k8s/prod/ingress.yml.btsppr", size: 578, mode: os.FileMode(420), modTime: time.Unix(1661935949, 0)}
+	info := bindataFileInfo{name: "templates/service/stateless_http_endpoint/k8s/prod/ingress.yml.btsppr", size: 1177, mode: os.FileMode(420), modTime: time.Unix(1662146683, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -695,33 +716,34 @@ func AssetNames() []string {
 
 // _bindata is a table, holding each asset generator, mapped to its name.
 var _bindata = map[string]func() (*asset, error){
-	"templates/service/stateless_http_endpoint/.gitignore.btsppr":                         templatesServiceStateless_http_endpointGitignoreBtsppr,
-	"templates/service/stateless_http_endpoint/Dockerfile.btsppr":                         templatesServiceStateless_http_endpointDockerfileBtsppr,
-	"templates/service/stateless_http_endpoint/README.md.btsppr":                          templatesServiceStateless_http_endpointReadmeMdBtsppr,
-	"templates/service/stateless_http_endpoint/cmd/app/app.go.btsppr":                     templatesServiceStateless_http_endpointCmdAppAppGoBtsppr,
-	"templates/service/stateless_http_endpoint/cmd/app/app_test.go.btsppr":                templatesServiceStateless_http_endpointCmdAppApp_testGoBtsppr,
-	"templates/service/stateless_http_endpoint/config/config.go.btsppr":                   templatesServiceStateless_http_endpointConfigConfigGoBtsppr,
-	"templates/service/stateless_http_endpoint/config/config_test.go.btsppr":              templatesServiceStateless_http_endpointConfigConfig_testGoBtsppr,
-	"templates/service/stateless_http_endpoint/docker-compose.yml.btsppr":                 templatesServiceStateless_http_endpointDockerComposeYmlBtsppr,
-	"templates/service/stateless_http_endpoint/go.mod.btsppr":                             templatesServiceStateless_http_endpointGoModBtsppr,
-	"templates/service/stateless_http_endpoint/go.sum.btsppr":                             templatesServiceStateless_http_endpointGoSumBtsppr,
-	"templates/service/stateless_http_endpoint/internal/emoji/emoji.go.btsppr":            templatesServiceStateless_http_endpointInternalEmojiEmojiGoBtsppr,
-	"templates/service/stateless_http_endpoint/internal/emoji/emoji_test.go.btsppr":       templatesServiceStateless_http_endpointInternalEmojiEmoji_testGoBtsppr,
-	"templates/service/stateless_http_endpoint/internal/metrics/metrics.go.btsppr":        templatesServiceStateless_http_endpointInternalMetricsMetricsGoBtsppr,
-	"templates/service/stateless_http_endpoint/internal/mock/emoji.go.btsppr":             templatesServiceStateless_http_endpointInternalMockEmojiGoBtsppr,
-	"templates/service/stateless_http_endpoint/k8s/prod/deployment.yml.btsppr":            templatesServiceStateless_http_endpointK8sProdDeploymentYmlBtsppr,
-	"templates/service/stateless_http_endpoint/k8s/prod/horizontal_autoscaler.yml.btsppr": templatesServiceStateless_http_endpointK8sProdHorizontal_autoscalerYmlBtsppr,
-	"templates/service/stateless_http_endpoint/k8s/prod/ingress.yml.btsppr":               templatesServiceStateless_http_endpointK8sProdIngressYmlBtsppr,
-	"templates/service/stateless_http_endpoint/k8s/prod/network_policy.yml.btsppr":        templatesServiceStateless_http_endpointK8sProdNetwork_policyYmlBtsppr,
-	"templates/service/stateless_http_endpoint/k8s/prod/pod_disruption_budget.yml.btsppr": templatesServiceStateless_http_endpointK8sProdPod_disruption_budgetYmlBtsppr,
-	"templates/service/stateless_http_endpoint/k8s/prod/service.yml.btsppr":               templatesServiceStateless_http_endpointK8sProdServiceYmlBtsppr,
-	"templates/service/stateless_http_endpoint/k8s/prod/service_monitor.yml.btsppr":       templatesServiceStateless_http_endpointK8sProdService_monitorYmlBtsppr,
-	"templates/service/stateless_http_endpoint/script/nuke.sh.btsppr":                     templatesServiceStateless_http_endpointScriptNukeShBtsppr,
-	"templates/service/stateless_http_endpoint/script/run.sh.btsppr":                      templatesServiceStateless_http_endpointScriptRunShBtsppr,
-	"templates/service/stateless_http_endpoint/script/setup.sh.btsppr":                    templatesServiceStateless_http_endpointScriptSetupShBtsppr,
-	"templates/service/stateless_http_endpoint/script/test.sh.btsppr":                     templatesServiceStateless_http_endpointScriptTestShBtsppr,
-	"templates/service/stateless_http_endpoint/script/update.sh.btsppr":                   templatesServiceStateless_http_endpointScriptUpdateShBtsppr,
-	"templates/service/stateless_http_endpoint/tools/simulator.sh.btsppr":                 templatesServiceStateless_http_endpointToolsSimulatorShBtsppr,
+	"templates/service/stateless_http_endpoint/.github/workflows/build-and-publish.yml.btsppr": templatesServiceStateless_http_endpointGithubWorkflowsBuildAndPublishYmlBtsppr,
+	"templates/service/stateless_http_endpoint/.gitignore.btsppr":                              templatesServiceStateless_http_endpointGitignoreBtsppr,
+	"templates/service/stateless_http_endpoint/Dockerfile.btsppr":                              templatesServiceStateless_http_endpointDockerfileBtsppr,
+	"templates/service/stateless_http_endpoint/README.md.btsppr":                               templatesServiceStateless_http_endpointReadmeMdBtsppr,
+	"templates/service/stateless_http_endpoint/cmd/app/app.go.btsppr":                          templatesServiceStateless_http_endpointCmdAppAppGoBtsppr,
+	"templates/service/stateless_http_endpoint/cmd/app/app_test.go.btsppr":                     templatesServiceStateless_http_endpointCmdAppApp_testGoBtsppr,
+	"templates/service/stateless_http_endpoint/config/config.go.btsppr":                        templatesServiceStateless_http_endpointConfigConfigGoBtsppr,
+	"templates/service/stateless_http_endpoint/config/config_test.go.btsppr":                   templatesServiceStateless_http_endpointConfigConfig_testGoBtsppr,
+	"templates/service/stateless_http_endpoint/docker-compose.yml.btsppr":                      templatesServiceStateless_http_endpointDockerComposeYmlBtsppr,
+	"templates/service/stateless_http_endpoint/go.mod.btsppr":                                  templatesServiceStateless_http_endpointGoModBtsppr,
+	"templates/service/stateless_http_endpoint/go.sum.btsppr":                                  templatesServiceStateless_http_endpointGoSumBtsppr,
+	"templates/service/stateless_http_endpoint/internal/emoji/emoji.go.btsppr":                 templatesServiceStateless_http_endpointInternalEmojiEmojiGoBtsppr,
+	"templates/service/stateless_http_endpoint/internal/emoji/emoji_test.go.btsppr":            templatesServiceStateless_http_endpointInternalEmojiEmoji_testGoBtsppr,
+	"templates/service/stateless_http_endpoint/internal/metrics/metrics.go.btsppr":             templatesServiceStateless_http_endpointInternalMetricsMetricsGoBtsppr,
+	"templates/service/stateless_http_endpoint/internal/mock/emoji.go.btsppr":                  templatesServiceStateless_http_endpointInternalMockEmojiGoBtsppr,
+	"templates/service/stateless_http_endpoint/k8s/prod/deployment.yml.btsppr":                 templatesServiceStateless_http_endpointK8sProdDeploymentYmlBtsppr,
+	"templates/service/stateless_http_endpoint/k8s/prod/horizontal_autoscaler.yml.btsppr":      templatesServiceStateless_http_endpointK8sProdHorizontal_autoscalerYmlBtsppr,
+	"templates/service/stateless_http_endpoint/k8s/prod/ingress.yml.btsppr":                    templatesServiceStateless_http_endpointK8sProdIngressYmlBtsppr,
+	"templates/service/stateless_http_endpoint/k8s/prod/network_policy.yml.btsppr":             templatesServiceStateless_http_endpointK8sProdNetwork_policyYmlBtsppr,
+	"templates/service/stateless_http_endpoint/k8s/prod/pod_disruption_budget.yml.btsppr":      templatesServiceStateless_http_endpointK8sProdPod_disruption_budgetYmlBtsppr,
+	"templates/service/stateless_http_endpoint/k8s/prod/service.yml.btsppr":                    templatesServiceStateless_http_endpointK8sProdServiceYmlBtsppr,
+	"templates/service/stateless_http_endpoint/k8s/prod/service_monitor.yml.btsppr":            templatesServiceStateless_http_endpointK8sProdService_monitorYmlBtsppr,
+	"templates/service/stateless_http_endpoint/script/nuke.sh.btsppr":                          templatesServiceStateless_http_endpointScriptNukeShBtsppr,
+	"templates/service/stateless_http_endpoint/script/run.sh.btsppr":                           templatesServiceStateless_http_endpointScriptRunShBtsppr,
+	"templates/service/stateless_http_endpoint/script/setup.sh.btsppr":                         templatesServiceStateless_http_endpointScriptSetupShBtsppr,
+	"templates/service/stateless_http_endpoint/script/test.sh.btsppr":                          templatesServiceStateless_http_endpointScriptTestShBtsppr,
+	"templates/service/stateless_http_endpoint/script/update.sh.btsppr":                        templatesServiceStateless_http_endpointScriptUpdateShBtsppr,
+	"templates/service/stateless_http_endpoint/tools/simulator.sh.btsppr":                      templatesServiceStateless_http_endpointToolsSimulatorShBtsppr,
 }
 
 // AssetDir returns the file names below a certain
@@ -768,6 +790,11 @@ var _bintree = &bintree{nil, map[string]*bintree{
 	"templates": &bintree{nil, map[string]*bintree{
 		"service": &bintree{nil, map[string]*bintree{
 			"stateless_http_endpoint": &bintree{nil, map[string]*bintree{
+				".github": &bintree{nil, map[string]*bintree{
+					"workflows": &bintree{nil, map[string]*bintree{
+						"build-and-publish.yml.btsppr": &bintree{templatesServiceStateless_http_endpointGithubWorkflowsBuildAndPublishYmlBtsppr, map[string]*bintree{}},
+					}},
+				}},
 				".gitignore.btsppr": &bintree{templatesServiceStateless_http_endpointGitignoreBtsppr, map[string]*bintree{}},
 				"Dockerfile.btsppr": &bintree{templatesServiceStateless_http_endpointDockerfileBtsppr, map[string]*bintree{}},
 				"README.md.btsppr":  &bintree{templatesServiceStateless_http_endpointReadmeMdBtsppr, map[string]*bintree{}},

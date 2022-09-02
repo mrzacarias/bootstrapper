@@ -2,7 +2,6 @@ package service
 
 import (
 	"fmt"
-	"io/ioutil"
 	"os"
 	"strings"
 
@@ -36,6 +35,15 @@ func BuildService(appName, appPrefix, appPath string) (err error) {
 	// Generate `root` files
 	rootFiles := []string{".gitignore", "docker-compose.yml", "Dockerfile", "go.mod", "go.sum", "README.md"}
 	err = loadAndGenerate(replacer, rootFiles, "", basePath, notExecutable)
+	if err != nil {
+		return err
+	}
+
+	// Generate `.github/workflows` files
+	cmdGHWorkflowsDir := basePath + "/.github/workflows"
+	_ = os.MkdirAll(cmdGHWorkflowsDir, os.ModePerm)
+	cmdGHWorkflowsFiles := []string{"build-and-publish.yml"}
+	err = loadAndGenerate(replacer, cmdGHWorkflowsFiles, ".github/workflows/", cmdGHWorkflowsDir, notExecutable)
 	if err != nil {
 		return err
 	}
@@ -132,9 +140,9 @@ func loadAndGenerate(replacer *strings.Replacer, list []string, templDir string,
 
 		// Create file (checking for executables first)
 		if exec {
-			err = ioutil.WriteFile(generated, []byte(result), 0755)
+			err = os.WriteFile(generated, []byte(result), 0755)
 		} else {
-			err = ioutil.WriteFile(generated, []byte(result), 0644)
+			err = os.WriteFile(generated, []byte(result), 0644)
 		}
 		if err != nil {
 			return err
