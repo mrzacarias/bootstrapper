@@ -19,8 +19,8 @@ spec:
     -  <load-balancer-id>-1954319865.us-east-1.elb.amazonaws.com # your Load Balancer automatically generated DNS
     secretName: {app_name}-tls
   rules:
-    # - <your-host>.com # If you have your DNS configured and a CNAME pointing to the Load Balancer
-    - host:  <load-balancer-id>-1954319865.us-east-1.elb.amazonaws.com # your Load Balancer automatically generated DNS
+    # - host: <your-host>.com # If you have your DNS configured and a CNAME pointing to the Load Balancer
+    - host: <load-balancer-id>-1954319865.us-east-1.elb.amazonaws.com # your Load Balancer automatically generated DNS
       http:
         paths:
           - path: /{app_name}(/|$)(.*)
